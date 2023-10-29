@@ -1,0 +1,9 @@
+@model Transaction
+<link rel="stylesheet" href="~/css/styles.css">
+<form asp-action="ProcessDepositWithdraw" asp-controller="Home" class="form-inline">
+    <div class="form-group row">
+        <label asp-for="Amount" class="sr-only">Deposit / Withdraw:</label>
+        <input asp-for="Amount" class="form-control" type="number" step="1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
